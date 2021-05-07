@@ -568,7 +568,7 @@ leur résultat.
 Des algorithmiques célèbres et des mathématiciens ont trouvé pour cela une
 rigueur. Il s'agit du concept extrêmement puissant de **récurrence**.
 
-Ce concept nécessite de découpé notre problèmes en sous problèmes facile à
+Ce concept nécessite de découper notre problème en sous problèmes facile à
 résoudre que nous appellerons des **cas de bases** et d'un autre cas qui nous permet
 de retomber vers nos cas de bases en effectuant au passage le calcul que nous
 désirons effectuer on appellera cela notre **cas inductif**.
