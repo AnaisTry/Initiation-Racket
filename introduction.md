@@ -86,13 +86,13 @@ pour voir ce qu'il va se passer comme:
 5
 > "Bonjour, Racket!"
 "Bonjour, Racket!"
-> ; Ahah Tu ne peut pas me lire je suis un commentaire car je commence par ';'.
+> ; Ahah Tu ne peux pas me lire je suis un commentaire car je commence par ';'.
 ```
 
 ## S-Expressions
 
-Avant de commencer a taper des expressions, il faut savoir quelque chose sur
-Racket. Il s'agit d'un LISP et tout les LISP ont la particularité d'avoir une
+Avant de commencer à taper des expressions, il faut savoir quelque chose sur
+Racket. Il s'agit d'un LISP et tous les LISP ont la particularité d'avoir une
 syntaxe basée sur les [Symbolic-Expressions][6], abrégées *S-Expr*, elle est basée
 sur le principe que toutes nos expressions seront préfixées par leur opérateur
 et suivies d'autres S-expressions.
@@ -117,7 +117,7 @@ comprendre...
 3
 ```
 
-Aie! C'est loin de ce que nous attendions! En effet comme cité précédemment,
+Aie! C'est loin de ce que nous attendions! En effet, comme cité précédemment,
 racket ne jure que par des S-Expressions!
 
 Nous devrons donc écrire notre expression arithmétique comme cela:
@@ -205,22 +205,22 @@ Votre professeur de mathématiques aurait écrit «Soit *a* un nombre dont la
 valeur est 5¤».
 
 Racket acquiesce en silence mais il a prit compte de votre *définition*. Vous
-pouvez vérifiez par vous même! S'il n'avait pas accepté votre définition il
+pouvez vérifier par vous-même! S'il n'avait pas accepté votre définition il
 l'aurait déjà signalé.
 
 ```racket
-> a ; Dit voir tu connais la valeur de a mon bon Racket?
+> a ; Dis-voir tu connais la valeur de a mon bon Racket?
 5
 ```
 
 Merci Racket! `a` ici est une variable. En général on ne connait pas la valeur à
 l'avance néanmoins.
 
-D'ailleurs si vous pensiez que les expressions allaient nous lâcher sachez
+D'ailleurs, si vous pensiez que les expressions allaient nous lâcher, sachez
 que le nom d'une variable comme «a» est une expression! Expression dont la valeur est ce
-que nous avons définit plus tôt, ici `5`.
+que nous avons défini plus tôt, ici `5`.
 
-Du coup on a gagner le droit d'exprimer des valeurs qui *dépendent* de cette
+Du coup on a gagné le droit d'exprimer des valeurs qui *dépendent* de cette
 variable et non de sa valeur! Comme:
 
 ```racket
@@ -272,7 +272,7 @@ besoin du `and`, du `or` et du `not` logique.
 
 #### Intersection `and`
 
-`(and a b)` est vrai si et seulement a est vrai **et que** b est vrai aussi.
+`(and a b)` est vrai si et seulement si a est vrai **et que** b est vrai aussi.
 C'est une *intersection* en bon français. ;)
 
 ```racket
@@ -349,7 +349,7 @@ x | `(not x)`
 
 Pas trop de surprises jusque la! :)
 
-### Les comparaisons arithmétique
+### Les comparaisons arithmétiques
 
 Comme pour l'algèbre booléenne il existe des comparaisons pour l'algèbre des
 nombres.
@@ -360,7 +360,7 @@ fonctionne pour des raisons qui vous seront expliquées dans très peu de temps.
 ```racket
 > (= 5 5) ; `=`
 #t
-> (equal? 5 5) ; Même si cela fonctionne sur les nombres ont préfére `=`.
+> (equal? 5 5) ; Même si cela fonctionne sur les nombres ont préfère `=`.
 #t
 > (= 4 5)
 #f
@@ -408,7 +408,7 @@ de coordonnées d'un rectangle, Et `a` et `b` un représentent point.
 
 Notre exercice va être de savoir si le point représenté par a, b est dans le
 rectangle ou pas!
-Une simple expression booléeenne devrait suffir!
+Une simple expression booléeenne devrait suffire!
 
 A vos éditeurs! Pour tester cliquer sur `Run now` ou `Exécuter` en français.
 
@@ -434,17 +434,17 @@ A vos éditeurs! Pour tester cliquer sur `Run now` ou `Exécuter` en français.
 
 ### Expressions conditionnelles
 
-Maintenant que nous avons dans notre poche des conditions nous pouvez commencer
-à écrire des programmes qui ont un *comportement* en effet avec une construction
-de plus qui est le `if` nous allons pouvoir faire des choses amusantes!
+Maintenant que nous avons dans notre poche des conditions, nous pouvons commencer
+à écrire des programmes qui ont un *comportement*. En effet avec une construction
+de plus, qui est le `if`, nous allons pouvoir faire des choses amusantes!
 
 #### `if` expressions
 
 La construction `if` en Racket correspond au "si prédicat alors expression" de
-La logique. Il s'avère qu'en Racket comme en [OCaml]() ou [Haskell]() ou [Rust]().
-Il s'agit d'une expression cela veut dire qu'une fois évalué votre if à une valeur! :)
+la logique. Il s'avère qu'en Racket comme en [OCaml]() ou [Haskell]() ou [Rust]() il s'agit d'une expression. 
+Cela veut dire, qu'une fois évalué, votre if a une valeur! :)
 
-Tout if à la forme suivante: `(if prédicat cas_vrai cas_faux).
+Tout if a la forme suivante: `(if prédicat cas_vrai cas_faux).
 
 
 ```racket
