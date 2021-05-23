@@ -21,7 +21,7 @@ langage que nous allons étudier, [Racket][3], est un dérivé d'un langage appe
 1958, les [LISP][5].
 
 Leur but premier est de permettre la communication avec un ordinateur et aussi
-d'échanger avec d'autres programmeurs au moyen d'un langage non ambiguë.
+d'échanger avec d'autres programmeurs au moyen d'un langage non ambigu.
 
 Ici nous nous intéresserons à Racket en particulier.
 Trêve de détails historiques! Nous distillerons plus d'informations sur les
@@ -457,10 +457,10 @@ Tout if a la forme suivante: `(if prédicat cas_vrai cas_faux).
 ```
 
 Le *predicat* est une expression booléenne c'est à dire elle renvoie un booléen.
-Le *cas_vrai* et le *cas_faux* quand à eux sont des expressions quelconques.
+Le *cas_vrai* et le *cas_faux* quant à eux sont des expressions quelconques.
 
 *Note*: En Racket les deux branches du `if` ne sont pas obligées de renvoyer le même
-type contrairement à OCaml attention! ;)
+type (contrairement à OCaml attention!) ;)
 
 #### Exercice: calcul de la valeur absolue d'un nombre
 
@@ -485,11 +485,11 @@ quelque chose de réutilisable!
 ### Fonctions
 
 Comme vous le pressentiez les programmeurs ne passent pas leur vie à
-copier coller des bouts de code ils essayent d'extraire des abstractions et des
+copier coller des bouts de code. Ils essayent d'extraire des abstractions et des
 généralisations de leurs solutions ou de leurs problèmes.
 
 Et un concept fondamental en la matière est la **fonction**. Il s'agit d'un
-sous-programme qui peut prendre des **paramettres** et qui renvoie une valeur!
+sous-programme qui peut prendre des **paramètres** et qui renvoie une valeur!
 
 Chose amusante une fonction est aussi une valeur! Nous allons en utiliser
 partout tellement ce principe est puissant. D'ailleurs le paradigme de
@@ -552,7 +552,7 @@ Nous l'appellerions `abs`.
 
 ### Fonctions récursives
 
-Maintenant que nous savons faire de fonctions nous aimerions pouvoir décrire des
+Maintenant que nous savons faire des fonctions, nous aimerions pouvoir décrire des
 programmes qui répètent une action, ou calculent quelque chose qui nécessite de
 faire plusieurs fois un traitement avant de terminer.
 
@@ -568,10 +568,10 @@ leur résultat.
 Des algorithmiques célèbres et des mathématiciens ont trouvé pour cela une
 rigueur. Il s'agit du concept extrêmement puissant de **récurrence**.
 
-Ce concept nécessite de découpé notre problèmes en sous problèmes facile à
-résoudre que nous appellerons des **cas de bases** et d'un autre cas qui nous permet
-de retomber vers nos cas de bases en effectuant au passage le calcul que nous
-désirons effectuer on appellera cela notre **cas inductif**.
+Ce concept nécessite de découper notre problème en sous-problèmes faciles à
+résoudre, que nous appellerons des **cas de bases**, et d'un autre cas qui nous permet
+de retomber vers nos cas de bases, en effectuant au passage le calcul que nous
+désirons effectuer, on appellera cela notre **cas inductif**.
 
 #### Exercice: somme de 0 à n.
 
